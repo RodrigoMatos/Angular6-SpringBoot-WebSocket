@@ -1,0 +1,10 @@
+<div class="content-message {{message.classeCss}}">
+  <mat-card style="padding: 0px 24px !important;">
+    <div class="header-message">
+      {{ message.data | date: 'HH:mm' }} - {{ message.usuario.nome }}
+    </div>
+    <div class="text-message">
+      {{ message.texto }}
+    </div>
+  </mat-card>
+</div>

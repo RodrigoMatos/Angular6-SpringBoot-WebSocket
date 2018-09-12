@@ -1,0 +1,14 @@
+.content-message {
+    min-height: 50px;
+}
+
+.header-message {
+    height: 20px;
+    color: #747577;
+}
+
+.text-message {
+    min-height: 30px;
+    font-size: 20px;
+    word-wrap: break-word;
+}

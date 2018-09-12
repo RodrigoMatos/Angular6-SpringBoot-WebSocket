@@ -1,0 +1,37 @@
+<div class="jumbotron jumbotron-fluid" style="height: 100%;">
+    <div class="container" style="height: 100%;">
+
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <mat-form-field style="width: 100%;">
+                    <input matInput id="usuario" [(ngModel)]="message.usuario.nome" placeholder="Nome">
+                </mat-form-field>
+            </div>
+        </div>
+
+        <div class="row justify-content-center" style="height: 100%">
+
+            <div class="col-12" style="height: 70%">
+                <div class="chat">
+                    <div class="messages">
+                        <div class="item-message" *ngFor="let msg of listMessages;">
+                            <app-message [message]=msg></app-message>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2"></div>
+
+            <div class="col-6">
+                <mat-form-field style="width: 100%;">
+                    <input matInput [(ngModel)]="message.texto" placeholder="" (keyup)="onKey($event)">
+                </mat-form-field>
+            </div>
+            <div class="col-2">
+                <button mat-raised-button color="primary" (click)="sendMessage()" [disabled]="!canSendMessage()">Enviar</button>
+            </div>
+        </div>
+
+    </div>
+</div>
