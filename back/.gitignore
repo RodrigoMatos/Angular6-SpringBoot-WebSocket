@@ -4,6 +4,7 @@
 ### STS ###
 .apt_generated
 .classpath
+*.class
 .factorypath
 .project
 .settings
@@ -11,7 +12,7 @@
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+*.idea
 *.iws
 *.iml
 *.ipr
@@ -24,3 +25,10 @@
 /nbdist/
 /.nb-gradle/
 /bin/
+
+# Visual Studio Code code
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/tasks.json
