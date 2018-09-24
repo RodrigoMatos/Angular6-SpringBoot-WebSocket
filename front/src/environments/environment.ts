@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  // url_socket: 'http://172.29.40.30:8888/socket'
+  //url_socket: 'http://172.29.40.35:8888/socket'
   url_socket: 'http://localhost:8888/socket'
 };
 

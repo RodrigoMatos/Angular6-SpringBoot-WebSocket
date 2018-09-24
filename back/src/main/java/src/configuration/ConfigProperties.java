@@ -8,7 +8,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("config-properties")
 public class ConfigProperties {
 
-	private List<String> originsPermitidas = Arrays.asList("http://localhost:4200");
+	private List<String> originsPermitidas = Arrays.asList("http://localhost:4200", "http://172.29.40.35:4200");
 
 	private final Seguranca seguranca = new Seguranca();
 
